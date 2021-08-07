@@ -1,0 +1,325 @@
+<script>
+    import Header from './components/Header.svelte';
+    import About from './components/About.svelte';
+</script>
+<div>
+    <Header />
+    <div class="section centered">
+        <About />
+    </div>
+  <div class="section centered odd">
+      fuck this
+  </div>
+
+    <!-- Objective Statement/1-2 sentence about me -->
+    <div class='bg-light'>
+        <div class='container py-5 content-section'>
+            <div class='pb-4'>
+                <h2 class='d-flex justify-content-center pb-4'>Who Am I?</h2>
+                <hr>
+            </div>
+            <p id='whoami'>
+                Hello! My name is Max, and I'm a recent college graduate with a strong passion for
+                programming. My goal for the next few years is to get a job where I can provide meaningful
+                code to a great company. I am also trying to learn everything I can about developing great code.
+            </p>
+
+            <!-- It would be cool to provide some images of myself with a 1-2 sentence
+            hover overlay that described the pic -->
+            <!-- <div class='d-none'> -->
+            <div class=''>
+                <div class='row mt-5'>
+
+                    <div class='col-4 gallery-img'>
+                        <img src='images/lakewithgirls.jpg' style='width:100%' alt='My friends and I at my cabin in Minnesota'>
+                        <div class='overlay'>
+                            <div class='text'>
+                                My friends and I enjoying a weekend at my cabin in northern Minnesota.
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-4 gallery-img'>
+                        <img src='images/gradMom.jpg' style='width:100%' alt='My mom and I at graduation.'>
+                        <div class='overlay'>
+                            <div class='text'>
+                                My incredibly supportive mother and I at graduation from Miami University.
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-4 gallery-img'>
+                        <img src='images/madMN.jpg' style='width:100%' alt='My girlfriend Madeline and I at Minnehaha Falls.'>
+                        <div class='overlay'>
+                            <div class='text'>
+                                My girlfriend, Madeline, and I at the frozen Minnehaha Falls.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- .d-lg-block -->
+
+            <div class=''>
+                <div class='row .hidden-sm-down'>
+                    <div class='col-4 gallery-img'>
+                        <img src='images/skiing.jpg' style='width:100%' alt='An image of myself water skiing.'>
+                        <div class='overlay'>
+                            <div class='text'>
+                                Water skiing has always been a favorite hobby of mine.
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                          <div class='col-sm-4 gallery-img'>
+                            <img src='images/placeholder.png' style='width:100%' alt='placeholder image'>
+                            <div class='overlay'>
+                              <div class='text'>
+                                Baseball has been a passion of mine since I could walk
+                              </div>
+                            </div>
+                          </div>
+                    -->
+                    <div class='col-4 gallery-img'>
+                        <img src='images/mongoLauren.jpg' style='width:100%' alt='My dog Mongo, my sister, and I.'>
+                        <div class='overlay'>
+                            <div class='text'>
+                                My dog Mongo (name credits to Mongo from Blazing Saddles) and my sister.
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                          <div class='col-sm-3 gallery-img'>
+                            <img src='images/placeholder.png' style='width:100%' alt='placeholder image'>
+                            <div class='overlay'>
+                              <div class='text'>
+                                My dad and I
+                              </div>
+                            </div>
+                          </div>
+                    -->
+                    <div class='col-4 gallery-img'>
+                        <img src='images/madSB.jpg' style='width:100%' alt='My girlfriend and I at the Smokey Mountains.'>
+                        <div class='overlay'>
+                            <div class='text'>
+                                My girlfriend and I on Spring Break 2018 in the Smokey Mountains.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class='bg-dark text-light'>
+        <div class='container py-5 content-section'>
+            <div class='pb-4'>
+                <h2 class='d-flex justify-content-center pb-4'>Experience</h2>
+                <hr style='border-color: #777'>
+            </div>
+
+            <div class='exp-section'>
+                <div>
+                    <div>
+                        <h3>Bioinformatics Intern</h3>
+                        <p class='mb-1'>US Air Force, Department of Defense</p>
+                        <p>
+                            Henry M. Jackson Foundation
+                        </p>
+                    </div>
+
+                    <p>As a Bioinformatics Intern, I collaborated with a team to develop a pipeline
+                        to process and analyze hundreds of thousands of RNA strands. I utilized
+                        open-source software, supercomputers, and lots of C++ code to create a piece of
+                        software that found secondary structural motifs in viral RNA strands.</p>
+                </div>
+            </div>
+
+            <div class='exp-section'>
+                <div class='mt-5'>
+                    <div>
+                        <h3>Teacher's Assistant</h3>
+                        <p>
+                            Miami University
+                        </p>
+                    </div>
+
+                    <p>As a teacher's assistant, I had the pleasure of taking an active role
+                        in helping the students understand and learn the course material. I taught
+                        them about relational database design, writing effective SQL queries,
+                        translation from ERD's to relational schemas, and more.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class='bg-light'>
+        <div class='container py-5 content-section'>
+            <div class='pb-4'>
+                <h2 class='d-flex justify-content-center pb-4'>Skills</h2>
+                <hr>
+            </div>
+
+            <div class='row'>
+                <div class='col-sm-6 text-center'>
+                    <p>C++</p>
+                    <p>Java</p>
+                    <p>PHP</p>
+                    <p>SQL</p>
+                    <p>HTML & CSS (Bootstrap)</p>
+                    <p>JavaScript & jQuery</p>
+                </div>
+                <div class='col-sm-6 text-center'>
+                    <p>Relational Databases</p>
+                    <p>RESTful Web Development</p>
+                    <p>AWS Experience</p>
+                    <p>Communication and Writing</p>
+                    <p>Experience with Windows and Linux/Unix-like systems</p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- Close Skills -->
+
+    <!-- Projects - with link to separate projects page -->
+    <div class='bg-dark text-light'>
+        <div class='container py-5 content-section'>
+            <div class='pb-4'>
+                <h2 class='d-flex justify-content-center pb-4'>Projects</h2>
+                <hr style='border-color: #777'>
+            </div>
+
+            <div class='card-columns'> <!-- Start card Columns -->
+
+                <a href='http://ec2-35-173-243-180.compute-1.amazonaws.com/'>
+                    <div class='card d-inline-block text-dark project-link'>
+                        <img class='card-img-top' src='images/blog_logo.png' alt='Blog Logo image'>
+                        <div class='card-body'>
+                            <h3 class='card-title'>Blog</h3>
+                            <p class='d-none d-sm-block card-text'>I built myself a blog to discuss my own projects,
+                                areas I would like to know more about, and possibly provide insight
+                                to others who are in a similar situation to myself.</p>
+                            <p class='d-sm-none card-text'>Click for more about the blog I made!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href='/psf'>
+                    <div class='card d-inline-block text-dark project-link'>
+                        <img class='card-img-top' src='images/psf_placeholder.jpg' alt='Parking Space Finder image'>
+                        <div class='card-body'>
+                            <h3 class='card-title'>Parking Space Finder</h3>
+                            <p class='d-none d-sm-inline-block card-text'>My senior capstone project was an application called the Parking Space Finder. It combined a mobile application, central server, and different hardware to keep track of parking spaces and display that information to users.</p>
+                            <p class='d-inline-block d-sm-none card-text'>Click to hear more about my Senior Capstone!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href='/secretary'>
+                    <div class='card d-inline-block text-dark project-link'>
+                        <img class='card-img-top' src='images/algorithm.jpg' alt='Image displaying some code'>
+                        <div class='card-body'>
+                            <h3 class='card-title'>Algorithm Games</h3>
+                            <p class='d-none d-sm-inline-block card-text'>Inspired by the the book "Algorithms to Live By" by Brian Christian and Tom Griffiths, I've decided to start putting some of these famous algorithms to the test with simple games. More games coming soon as I dive further into the book! Click here to play the game!</p>
+                            <p class='d-inline-block d-sm-none card-text'>Click to take see how you'd do at the Secretary Problem!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href='/hqapp'>
+                    <div class='card d-inline-block text-dark project-link'>
+                        <img class='card-img-top' src='images/hq_screenshot.png' alt=''>
+                        <div class='card-body'>
+                            <h3 class='card-title'>HQ Trivia Helper</h3>
+                            <p class='d-none d-sm-inline-block card-text'>Frustrated by my complete lack of ability to win a game of HQ, I created a simple web app that allows users to enter their choices and see real-time recommendations based on all the other users.</p>
+                            <p class='d-sm-none card-text'>Click for more about my HQ web application!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href='/dndsite'>
+                    <div class='card d-inline-block text-dark project-link'>
+                        <img class='card-img-top' src='images/dnd_site.jpg' alt=''>
+                        <div class='card-body'>
+                            <h3 class='card-title'>Dungeons and Dragons Helper</h3>
+                            <p class='d-none d-sm-inline-block card-text'>I began creating a website that would function similarly to a social network to allow users to easily create and keep track of characters, campaigns, and groups. This project is still in progress.</p>
+                            <p class='d-sm-none card-text'>Click for more info about the DnD site I'm working on!</p>
+                        </div>
+                    </div>
+                </a>
+
+                <a href='/particlesim'>
+                    <div class='card d-inline-block text-dark project-link'>
+                        <img class='card-img-top' src='images/particle_sim2.png' alt=''>
+                        <div class='card-body'>
+                            <h3 class='card-title'>Physics Simulations</h3>
+                            <p class='d-none d-sm-inline-block card-text'>Utilizing the p5 JavaScript library, I created physics simulations using real-world physics concepts.</p>
+                            <p class='d-sm-none card-text'>Learn more about the physics simulations I made!</p>
+                        </div>
+                    </div>
+                </a>
+            </div> <!-- Close Card column? -->
+        </div>
+    </div> <!-- end Projects -->
+
+    <!-- Education -->
+    <div class='bg-light text-dark'>
+        <div class='container py-5 content-section'>
+            <div class='pb-4'>
+                <h2 class='d-flex justify-content-center pb-4'>Education</h2>
+                <hr>
+            </div>
+
+            <div> <!-- Education Text Section -->
+                <div>
+                    <!-- Maybe at some point include an image of Miami Logo -->
+                    <h4>Miami University</h4>
+                    <p>Bachelor's Degree in Computer Science</p>
+                </div>
+
+                <p>Graduated May 2018</p>
+                <p>Areas of Interest: Web Development, High Performance Computing, Machine Learning</p>
+
+            </div> <!-- Close edu text -->
+
+            <!-- animated progress bar? -->
+
+        </div>
+    </div> <!-- End Education -->
+
+
+    <!-- Footer -->
+    <div class='bg-dark text-light'>
+        <div class='container pt-5 pb-4 content-section footer'>
+
+            <div class='d-flex justify-content-center'>
+                <p><a href='mailto:omaxwellanderson@gmail.com'>omaxwellanderson@gmail.com</a> |
+                    (612) 236-7330 |
+                    <a target='_blank' href='https://www.linkedin.com/in/o-maxwell-anderson'>LinkedIn</a> |
+                    <a target='_blank' href='https://www.github.com/omaxanderson'>GitHub</a></p>
+            </div>
+        </div>
+    </div> <!-- End Footer -->
+
+</div>
+
+<style lang="scss">
+    :global(body) {
+        margin: 0;
+        padding: 0;
+    }
+
+    :global(.section) {
+        background-color: white;
+        display: flex;
+        padding: 100px;
+    }
+
+    :global(.odd) {
+        background-color: #BBB;
+    }
+
+    :global(.centered) {
+        justify-content: center;
+    }
+</style>
