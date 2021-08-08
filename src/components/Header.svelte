@@ -1,3 +1,31 @@
+
+<script>
+    let img, imageHeight;
+    function onImageLoad() {
+        imageHeight = Math.min(img.offsetHeight, window.innerHeight);
+        console.log(imageHeight);
+    }
+    window.onresize = () => {
+      onImageLoad();
+    };
+</script>
+
+<div class="title">
+  <div
+    class="flex justify-content align-items"
+    style="height: {imageHeight}px"
+  >
+    <img
+      id="header-img"
+      bind:this={img}
+      on:load={onImageLoad}
+      src="./static/seattle.jpg"
+      alt="Seattle from Pike Place"
+    />
+    <h1>O Max Anderson</h1>
+  </div>
+</div>
+
 <style>
   .title-name {
     display: flex;
@@ -24,32 +52,9 @@
   }
 
   h1 {
-    position: absolute;
+    position: fixed;
     top: 20%;
     color: white;
+    z-index: -1;
   }
 </style>
-
-<script>
-    let img, imageHeight;
-    function onImageLoad() {
-        imageHeight = img.offsetHeight;
-        console.log(imageHeight);
-    }
-</script>
-
-<div class="title">
-  <div
-    class="flex justify-content align-items"
-    style="height: {imageHeight}px"
-  >
-    <img
-      id="header-img"
-      bind:this={img}
-      on:load={onImageLoad}
-      src="./static/seattle.jpg"
-      alt="Seattle from Pike Place"
-    />
-    <h1>O Max Anderson</h1>
-  </div>
-</div>
