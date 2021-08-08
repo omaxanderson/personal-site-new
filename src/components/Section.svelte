@@ -12,6 +12,11 @@
 </div>
 
 <style lang="scss">
+    h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
     .section {
         background-color: #FFF;
         display: flex;

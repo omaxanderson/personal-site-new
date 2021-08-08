@@ -19,13 +19,5 @@
 <style lang="scss">
     .container {
         padding: 16px;
-
-        & + & {
-            border-top: 1px solid #888;
-        }
-    }
-
-    .container + .container {
-        border-top: 1px solid #888;
     }
 </style>
