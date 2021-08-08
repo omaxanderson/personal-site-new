@@ -1,9 +1,10 @@
 <script>
     export let title;
     export let odd = false;
+    export let column = false;
 </script>
 
-<div class="section centered {odd ? 'section--odd' : ''}">
+<div class="section centered {odd && 'section--odd'} {column && 'column'}">
     {#if title}
         <h2>{title}</h2>
     {/if}
@@ -21,6 +22,10 @@
             color: #FFF;
         }
 
+    }
+
+    .column {
+        flex-direction: column;
     }
 
     .centered {

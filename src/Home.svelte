@@ -23,11 +23,11 @@
     <Pictures />
   </Section>
 
-  <Section title="Experience">
+  <Section title="Experience" column>
     <Experience />
   </Section>
 
-  <Section odd title="Skills">
+  <Section odd title="Skills" column>
     <Skills />
   </Section>
 
