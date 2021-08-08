@@ -20,9 +20,6 @@
 
     var observer = new IntersectionObserver(
         function([element]) {
-            if (skill === 'React') {
-                console.log(element);
-            }
             if(element.intersectionRatio === 1) {
                 setTimeout(() => setOffset(percent), 500);
             } else if (element.intersectionRatio === 0 && element.boundingClientRect.y > 0) {
