@@ -3,19 +3,23 @@
   export let title;
   export let hover;
 
-  let hovered = false;
+  let image;
+  let height, width;
 
-  function onHover(isHovered: boolean) {
-      hovered = isHovered;
-      console.log('hovered', hovered);
+  function translate() {
+    width = image.width;
+    height = image.height;
+    // add the transform
+    console.log('img', width, height);
+    image.style.transform = `translateX(-${(width - height) / 2}px)`;
   }
 </script>
 <div class="tile">
   <img
-    on:mouseenter={() => onHover(true)}
-    on:mouseleave={() => onHover(false)}
+    bind:this={image}
     {src}
     alt={title}
+    on:load={translate}
   />
   <div class="overlay">
     {hover}
@@ -52,13 +56,13 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    background-color: #DDD;
-    color: black;
+    color: #DDD;
+    background-color: black;
     transition: .25s ease-in-out;
     z-index: 11;
 
     &:hover {
-      opacity: 1;
+      opacity: .8;
     }
   }
 </style>

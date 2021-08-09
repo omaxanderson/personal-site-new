@@ -19,7 +19,7 @@
             from: "August 2018",
             to: "April 2019",
             location: "Minneapolis, MN",
-            descriptions: [,
+            descriptions: [
                 "Worked closely with customers to resolve problems they were having with the platform.",
                 "Performed database fixes, hotfixed critical bugs, and worked with the Development team to prioritize bugs.",
             ]
@@ -30,7 +30,7 @@
             from: "August 2017",
             to: "May 2018",
             location: "Oxford, OH",
-            descriptions: [,
+            descriptions: [
                 "Assisted the professor with teaching students the fundamentals of relational database design, SQL, and other skills.",
             ]
         },

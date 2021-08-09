@@ -17,7 +17,7 @@
       {
         src: './static/skiing.jpg',
         title: 'Skiing at sunset',
-        hover: 'My sister snapped a pic through the trees during a particularly beautiful sunset',
+        hover: 'My sister snapped a pic through the trees of me skiing during a particularly beautiful sunset',
       },
       {
         src: './static/cabin_friends.jpg',
@@ -28,6 +28,11 @@
         src: './static/winery.jpg',
         title: 'Napa Valley winery',
         hover: 'At a winery just north of San Francisco in Napa Valley',
+      },
+      {
+        src: './static/charleston.jpg',
+        title: 'Charleston beach',
+        hover: 'Some friends and I on a beach just outside Charleston',
       },
     ]}
   />

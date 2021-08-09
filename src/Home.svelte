@@ -31,7 +31,7 @@
     <Skills />
   </Section>
 
-  <Section title="Personal projects">
+  <Section title="Personal projects" column>
     <Projects />
   </Section>
 
