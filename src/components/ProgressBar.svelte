@@ -2,6 +2,7 @@
     import { onMount } from 'svelte';
     export let skill: string;
     export let percent: number;
+    export let index: number;
 
     let circle;
 
@@ -21,7 +22,7 @@
     var observer = new IntersectionObserver(
         function([element]) {
             if(element.intersectionRatio === 1) {
-                setTimeout(() => setOffset(percent), 500);
+                setTimeout(() => setOffset(percent), 250 + (25 * index));
             } else if (element.intersectionRatio === 0 && element.boundingClientRect.y > 0) {
                 setOffset(0);
             }
