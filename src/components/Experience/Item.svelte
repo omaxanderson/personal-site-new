@@ -8,7 +8,7 @@
 </script>
 
 <div class="container">
-    <h3><strong>{jobTitle}</strong> - {company}</h3>
+    <h3><u>{jobTitle}</u> - {company}</h3>
     <h5>{location}</h5>
     <h5>{from} - {to}</h5>
     {#each descriptions as desc, index (index)}

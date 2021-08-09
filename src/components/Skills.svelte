@@ -13,7 +13,7 @@
     <ProgressBar skill="AWS" percent={80} />
     <ProgressBar skill="Docker" percent={80} />
     <ProgressBar skill="Kubernetes" percent={70} />
-    <ProgressBar skill="C++" percent={65} />
+    <ProgressBar skill="C++" percent={50} />
     <ProgressBar skill="PHP" percent={65} />
     <ProgressBar skill="Python" percent={25} />
 </div>

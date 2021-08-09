@@ -1,9 +1,10 @@
 <script>
   import About from './components/About.svelte';
   import Experience from './components/Experience/Experience.svelte';
+  import Footer from './components/Footer.svelte';
   import Header from './components/Header.svelte';
   import Pictures from './components/Pictures.svelte';
-  import Projects from './components/Projects.svelte';
+  import Projects from './components/Projects/Projects.svelte';
   import Section from './components/Section.svelte';
   import Skills from './components/Skills.svelte';
 </script>
@@ -35,17 +36,9 @@
     <Projects />
   </Section>
 
-  <div class='bg-dark text-light'>
-    <div class='container pt-5 pb-4 content-section footer'>
-
-      <div class='d-flex justify-content-center'>
-        <p><a href='mailto:omaxwellanderson@gmail.com'>omaxwellanderson@gmail.com</a> |
-          (612) 236-7330 |
-          <a target='_blank' href='https://www.linkedin.com/in/o-maxwell-anderson'>LinkedIn</a> |
-          <a target='_blank' href='https://www.github.com/omaxanderson'>GitHub</a></p>
-      </div>
-    </div>
-  </div> <!-- End Footer -->
+  <Section odd>
+    <Footer />
+  </Section>
 
 </div>
 
